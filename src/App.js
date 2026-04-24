@@ -239,7 +239,7 @@ export default function KPIStudyForm() {
   const [flashcard, setFlashcard] = useState({ catIdx: 0, indIdx: 0, flipped: false });
   const [quizMode, setQuizMode] = useState(false);
   const [quizAnswer, setQuizAnswer] = useState("");
-  const [quizResult, setQuizResult] = useState(null);
+const [, setQuizResult] = useState(null);
 
   const allIndicadores = kpiData.flatMap((cat, ci) =>
     cat.indicadores.map((ind, ii) => ({ ...ind, categoria: cat.categoria, catIdx: ci, indIdx: ii }))
